@@ -1,0 +1,811 @@
+/*Custom Fonts-------------------------------------*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Raleway:400,800,900&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,800,900&display=swap');
+
+
+/*Common CSS-------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(247, 241, 227,0.1);
+    margin: 0;
+}
+
+h1 {
+
+    font-size: 3.3rem;
+    color: navy;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+
+    font-size: 2.5em;
+    color: #005284;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h3 {
+
+    font-size: 2.2em;
+    color: #005284;
+    font-weight: 800;
+}
+
+h4 {
+
+    font-size: 1.4em;
+    color: #005284;
+    font-weight: 800;
+}
+
+
+
+p {
+    font-size: 1.4em;
+    color: #222;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-size: 1.4em;
+    color: #005284;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*Header CSS---------------------------------------*/
+
+header h1 {
+  text-align: center;
+}
+
+/*Nav CSS-------------------------------------------*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+/*    background: linear-gradient(180deg, rgba(255,218,121,1) 35%, rgba(252,226,157,0.3676821070224965) 100%);*/
+    background: linear-gradient(270deg, rgba(153,204,255,9) 15%, rgba(255,255,255,0.3676821070224965) 90%);
+    margin: 0;
+    
+}
+
+.nav-item {
+    margin-right: 1vw;
+}
+
+.nav-link {
+    font-size: 1.5vw;
+    color: rgba(132, 129, 122,1.0);
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    transition: all 300ms ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(132, 129, 122,1.0);
+}
+
+#navbar-brand {
+    margin: 1.2em;
+    opacity: 0.7;
+}
+
+#navbarNav {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 2em;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.active-page {
+    background-color: rgb(255,255,255)  !important;
+    color: rgb(9, 145, 98)              !important;
+}
+
+@media screen and (min-width: 1400px) {
+  .nav-link {
+    font-size: 1.6rem;
+  }
+}
+
+.page-title {
+    text-align: center;
+}
+
+/*index.html CSS------------------------------------*/
+
+#about {
+    padding: 3em;
+    text-align: center;
+    background-color: #ebebeb;
+    padding-bottom: 6em;
+}
+
+#about p {
+    text-align: center;
+}
+
+.hompage-banner-block {
+/*    padding: 3em;*/
+    position: relative;
+}
+
+.hompage-banner-block div {
+    text-align: center;
+}
+
+#promotions {
+    position: fixed;
+    bottom: 20%;
+    right: 5%;
+    background-color: rgba(48, 58, 82, 0.5);  
+    border-radius: 5px;
+    padding: 20px 50px;
+    
+  }
+#promotions p{
+    color: #ffffff;
+}
+
+#promotions h2{    
+    color: #bdc3c7;
+}
+
+#buy-ticket {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    background-color: rgba(48, 58, 82, 0.5);    
+    padding: 20px 50px;
+    margin: 0;
+  }
+
+#buy-ticket p{
+    color: #ffffff;
+}
+
+#buy-ticket h2{    
+    color: #bdc3c7;
+}
+
+
+.centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+#banner-img{
+    width: 100%;
+    height: auto;
+}
+
+#banner-title{
+    color: white;
+}
+  
+/* Patterns */
+
+.pattern-white:after{
+    background: url(../img/patterns/pattern-grey.png) repeat;
+    content:'';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+}
+/*
+	.pattern-black:after{
+		background: url(../img/pattern-black.png) repeat;
+		content:'';
+		width: 100%;
+		height: 100%;
+		top:0;
+		left:0;
+		position: absolute;
+	}
+
+	.pattern-grid:after{
+		background: url(../images/pattern-grid.png) repeat;
+		content:'';
+		width: 100%;
+		height: 100%;
+		top:0;
+		left:0;
+		position: absolute;
+		opacity: 0.05;
+	}
+
+*/
+
+/*aircraft.html CSS------------------------------------*/
+
+#airplane-header{
+    margin: 5em 3em;
+}
+
+#search-bar {
+    background-color: #303A52;
+    color: #fff;
+    padding: 20px 0;
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#ride-search {
+    background-color: #fff;
+    border: 1px solid #b2cede;
+    font-weight: 600;
+    padding: 5px 5px 5px 10px;
+    text-transform: uppercase;
+    border-radius: 5px 0px 0px 5px;
+    margin: 10px 0px 10px 10px;
+}
+
+#ride-button {
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: none    !important;
+    margin: 10px 0px;
+}
+
+#airplane-list {
+    padding: 10px;
+}
+
+#airplane-list h2{
+    padding: 2em;
+}
+
+#airplane-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.airplane {
+    padding: 35px 15px;
+    margin: auto;
+    margin-bottom: 4vh;
+/*    background: rgba(255, 218, 121,0.5);*/
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    opacity: 100;
+    transition: box-shadow 500ms ease;
+    animation: 1s ease-out slideUp forwards;
+}
+
+.airplane:nth-child(1) { animation-delay: 100ms }
+.airplane:nth-child(2) { animation-delay: 200ms }
+.airplane:nth-child(3) { animation-delay: 300ms }
+.airplane:nth-child(4) { animation-delay: 400ms }
+.airplane:nth-child(5) { animation-delay: 500ms }
+.airplane:nth-child(6) { animation-delay: 600ms }
+.airplane:nth-child(7) { animation-delay: 700ms }
+.airplane:nth-child(8) { animation-delay: 800ms }
+.airplane:nth-child(9) { animation-delay: 900ms }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.airplane:hover {
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.4);
+}
+
+.airplane img {
+    height: 150px;
+    object-fit: cover;
+    width: 320px;
+}
+
+.airplane-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#park-map {
+    margin: 5em;
+}
+
+#park-map-img-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#park-map-link{
+    margin: 0 auto;
+}
+
+.search {
+    display: inline;
+    padding: 5px 5px 5px 10px;
+}
+
+.btn {
+    border: 0;
+    background-color: #bfbbb6;
+    text-align: center;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    font-family: "Open Sans",sans-serif;
+    transition: all 300ms ease;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+    background-color: rgba(51, 189, 85, 0.8);
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+}
+
+/* events.html CSS------------------------------------ */
+
+.flex-container {
+/*
+  padding: 0;
+  margin: 0;
+*/
+/*  list-style: none;*/
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+/*.event {
+    padding: 10px 30px;
+    height: 375px;
+    width: 425px;
+    margin: 10px;
+    background-color:white;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    text-align: center;
+    animation: 1s ease-out rotateIn forwards;
+    opacity: 0;
+}*/
+
+.event-item {
+    padding: 10px;
+    width:30%;
+/*    text-align: center;*/
+    border-left: 1px solid rgba(0,0,0,0.05);
+/*    margin: auto;*/
+    margin-bottom: 7vh;
+    
+/*    box-shadow: 5px 0px 0px rgba(0,0,0,0.2);*/
+}
+
+.event-info {
+    display: inline;
+}
+
+.event-info-item {
+    margin-top: 15px;
+}
+
+.event-item img {
+    object-fit: cover;
+     width: 100%;
+}
+
+.event-item a {
+    font-size: 1.2em;
+    color: #005284;
+    font-weight: 100;
+    cursor: pointer;
+    text-transform: lowercase;
+
+    text-decoration: none;
+    
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+#wrapper {
+    padding:20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+
+
+#current-events h3{
+    padding-left: 20px;
+}
+
+#current-events p{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    font-size: 1em;
+}
+
+.events-banner-img {
+    
+    width: 45%;
+    object-fit: cover;
+    right: 0px;
+    position: fixed;
+    top:35%;
+    z-index: -1;
+/*    float: right;*/
+}
+
+/*Training CSS-------------------------------------------*/
+.airmap-banner-img {
+    width: 100%;
+    object-fit: cover;
+    right: 0px;
+    position: fixed;
+    top:0px;
+    z-index: -1;
+/*    float: right;*/
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.training-banner-block {
+    
+    position: relative;
+    height: 200px;
+    margin:0 auto;
+}
+
+
+#training-center {
+    position:relative;
+    padding:20px;
+    margin-top:10px;
+    background-color: aliceblue;
+    background: linear-gradient(0deg, rgba(153,204,255,9) 15%, rgba(255,255,255,0.3676821070224965) 90%);
+}
+
+#training-center img {
+    padding:60px 20px 20px 20px;
+    margin: 6px;
+    float: right;
+    overflow: auto;
+    width:47%;
+    border-radius: 50%;
+}
+#requirements {
+  /*  background-color: rgba(48, 58, 82, 0.3); */
+
+}
+
+#training-aircraft {
+    padding:20px;
+    width:50%;
+    float:left;
+    text-align: center;
+}
+
+
+#instructor-details {
+}
+
+
+#price-details {
+}
+
+.course-list li{
+    font-size: 1.7em;
+   
+}
+
+.facility {
+    padding: 35px 15px;
+    margin: auto;
+    margin-bottom: 7vh;
+    background: rgba(255, 218, 121,0.5);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    animation-duration: 2s;
+    animation-name: bounceIn;
+    color: rgb(255,255,255);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.training-subheading {
+    padding-left: 2em;
+    padding-bottom: 1.5em;
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(1.07);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+/*Contact CSS-------------------------------------------*/
+#contact-container {
+    padding-top: 15px;
+    padding-bottom: 50px;
+     display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.contact-card {
+    background-color: darkgrey;
+    width: 460px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+/*    border: solid 2px grey;*/
+    transition: all 500ms ease;
+    animation: 1s ease-out contactAnim forwards;
+    opacity: 0;
+}
+
+.contact-card:hover  {
+    background-color: #ececec;
+    border: solid 2px #aaaaaa;
+    transform: scale(1.2);
+    
+}
+
+.contact-card:hover .contact-subject { color:grey}
+.contact-card:hover .contact-field { color:grey}
+.contact-card:hover .fas { color:grey}
+.contact-card:hover .far { color:grey}
+
+.contact-card:nth-child(1) { animation-delay: 200ms }
+.contact-card:nth-child(2) { animation-delay: 400ms }
+.contact-card:nth-child(3) { animation-delay: 600ms }
+.contact-card:nth-child(4) { animation-delay: 800ms }
+.contact-card:nth-child(5) { animation-delay: 1000ms }
+
+
+@keyframes contactAnim {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.contact-card span {
+    object-fit: contain;
+    padding: 15px;
+    display: inline;
+    float: left;
+}
+
+.contact-info {
+    padding: 5px;
+    float: right;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.contact-subject {
+     font-weight: 300;
+     font-size: 1.7em;
+     margin: 15px;
+     color: #ffffff;
+}
+
+.contact-field {
+    font-weight: 300;
+    font-size: 1.7em;
+    margin: 5px;
+}
+
+
+#contact-map {
+    width:100%;
+    height: 400px;
+    
+}
+
+.fa-phone-alt, .fa-plane, .fa-envelope {
+    font-size: 4em; 
+    color: white;
+    opacity: 0.8;
+    
+}
+
+
+@media screen and (max-width: 700px) {
+  .contact-name {
+      font-size: 3.5vw;
+  }
+  .contact-position {
+      font-size: 3vw;
+  }
+  .contact-number {
+      font-size: 2.5vw;
+  }
+  .contact-info {
+      width: 40vw;
+      padding-left: 3vw;
+  }
+}
+
+/* Contact Form -------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+.contact-form {
+    padding:20px;
+    margin: 0 auto;
+}
+
+.contact-form > h2, p {
+    text-align:center;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: darkgrey;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto; 
+}
+
+
+.col-1 {
+  width: 49%;
+  margin-top: 6px;
+  float:left;
+}
+
+.col-2 {
+  width: 49%;
+  margin-top: 6px;
+  float:right;
+}
+
+.col-3 {
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-1, .col-2, .col-3, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Contact Form  ends here---------------------------*/
+
+
+/*Footer CSS-------------------------------------------*/
+
+footer {
+    padding: 5em;
+    background-color: #303A52;
+    color: #ffffff;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+footer #footer-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .footer-copyright {
+    text-align: center;
+    padding: 2em;
+}
+
+footer ul li {
+    font-size: 1 rem;    
+    font-weight: 900;
+
+}
+
+footer ul li a{
+    color: #ffffff;
+}
